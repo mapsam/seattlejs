@@ -1,24 +1,30 @@
 /* Media Queries */
 /* Large desktop */
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
 	.container {
-		width:1200px;
+		width:960px;
 	}
-	nav {}
-}
-@media (min-width: 980px) and (max-width: 1199px) {
-	.container {
-		width:980px;
+	nav {
+		display:block;
+		position:fixed;
 	}
-	nav {}
+	nav ul {
+		padding:15px 0;
+	}
 }
  
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
+@media (min-width: 768px) and (max-width: 959px) {
 	.container {
 		width:768px;
 	}
-	nav {}
+	nav {
+		display:block;
+		position:fixed;
+	}
+	nav ul {
+		padding:15px 0;
+	}
 }
  
 /* Landscape phone to portrait tablet */

@@ -32,7 +32,12 @@ table {
 }
 
 /* SEATTLE JS */
-
+body {
+	font-family:helvetica, arial, sans-serif;
+}
+strong {
+	font-weight:600;
+}
 .container {
 	display:block;
 	margin:auto;
@@ -44,25 +49,57 @@ section {
 
 nav {
 	width:100%;
-	background-color:#eeeeee;
-	height:55px;
+	background-color:#333333;
+	border-bottom:#282828 1px solid;
+	z-index:10;
+}
+nav ul, nav ul li {
+	list-style-type: none;
+}
+nav li {
+	display:inline;
+	margin-right:15px;
+}
+nav li a {
+	text-decoration:none;
+	color:#999;
+	font-size:0.9em;
+	border-radius:4px;
+	padding:5px 7px;
+}
+nav li a:hover {
+	background:#111;
 }
 
+
 #intro {
-	background-color:#0EBFE9;
-	text-align:left;
-	padding:60px 0;
+	background-color:#333333;
+	text-align:center;
+	padding:100px 0 100px;
 }
 #intro h1 {
-	font-family:helvetica;
 	font-size:4em;
-	color:#507786;
+	color:#0EBFE9;
 	font-weight:900;
 	margin-bottom:10px;
 }
 #intro h2 {
-	font-family:helvetica;
 	font-weight:100;
 	color:#fff;
 	font-size:1.4em;
+}
+.event {
+	width:100%;
+	position:relative;
+}
+.event-info {
+	float:left;
+	display:inline-block;
+}
+.event-map {
+	width:400px;
+	height:230px;
+	position:relative;
+	display:inline-block;
+	right:0;
 }
